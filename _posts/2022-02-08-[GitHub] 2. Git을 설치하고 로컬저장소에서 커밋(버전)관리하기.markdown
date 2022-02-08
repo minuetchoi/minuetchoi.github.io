@@ -1,0 +1,116 @@
+---
+layout: post
+title: "[GitHub] 2. Git을 설치하고 로컬저장소에서 커밋(버전)관리하기"
+date: 2020-02-08 19:20:23 +0900
+category: github
+---
+# 1. Git 설치
+
+[git-scm.com/downloads][git-scm.com/downloads]
+위의 사이트에서 Git을 설치해 줍니다.
+
+Git Bash를 실행해서 $옆에 'git'을 입력하고 엔터키를 누르면 다음과 같은 창이 뜹니다.
+
+성공적으로 git이 설치 됐다는 뜻입니다.
+
+![alt text](/public/img/github_1.png)
+
+# 2. 로컬저장소 만들기
+
+바탕화면 > Programming > JisunSource (폴더명은 자유)
+폴더를 만든 후, 그 안에 README.txt 파일을 만들어줍니다. 
+
+내용은 아무렇게나 적어주고 저장해 준 후, [JisunSource]폴더에 우클릭해서 [Git Bash Here]를 클릭해줍니다.
+
+```bash
+git init
+```
+: Git 초기화 과정. 'Initialized empty Git repository'라는 텍스트가 나오면 성공.
+
+이 과정을 실행하고 나면 [JisunSource]폴더에는 [.git]이라는 폴더가 자동으로 생성됩니다.
+
+[.git]폴더를 로컬 저장소라 부르며, 이제 이 폴더에서 버전 관리를 할 수 있게 됩니다.
+
+# 3. 첫 번째 커밋 만들기
+
+Git에서는 생성된 파일의 각 버전을 커밋(Commit)이라 부릅니다.
+
+아까 생성한 [README.txt]파일을 하나의 버전으로 만들어보겠습니다.
+
+![alt text](/public/img/github_2.png)
+
+```bash
+git config --global user.email "내 이메일"
+git config --global user.name "내 이름"
+```
+:버전을 누가 만들었는지 등록하기 위한 내 정보 입력
+
+```bash
+git add [폴더이름]
+ex) git add README.txt
+```
+:커밋에 [README.txt]파일이 추가
+
+![alt text](/public/img/github_3.png)
+
+```bash
+git commit -m "해당 버전에 대한 설명"
+```
+를 입력해주면 파일에 대한 설명이 붙습니다.
+
+m은 message의 약자이며, 위와 같은 텍스트가 보이면 성공입니다.
+
+여기까지가 첫번째 버전을 만드는 과정이었습니다.
+
+# 4. 커밋 업데이트
+
+[README.txt]파일 내용을 수정한 후 저장합니다.
+
+![alt text](/public/img/github_4.png)
+
+```bash
+git add [폴더 이름]
+(ex) git add README.txt
+git commit -m "새로운 버전에 대한 설명"
+```
+위와 같이 다시 입력해주면 두번째 버전 만들기 성공입니다.
+
+# 5. 다른 커밋(버전)으로 이동하기
+
+개발을 하다보면 이전 버전으로 돌아가 다시 개발을 해야하는 상황이 생길 수 있습니다.
+
+그럴 때 이 Git을 이용해 해당 커밋으로 돌아갈 수 있습니다.
+
+```bash
+git log
+```
+위의 키워드를 입력해주면 그동안 만든 커밋을 최신 버전부터 보여둡니다.
+
+![alt text](/public/img/github_5.png)
+
+(HEAD -> master) : 현재 커밋
+
+```
+git checkout [원하는 커밋 아이디 앞자리 7개 또는 전체]
+(ex) git checkout ccd41bc 또는 git checkout
+ccd41bc60a4c511dbaf68621d37146eb51970330
+```
+위의 키워드를 입력하면 'HEAD is now at ccd41bc'가 뜨면서 커밋이 바뀌게 됩니다.
+
+![alt text](/public/img/github_6.png)
+
+[README.txt]파일을 열어보면 업데이트 하기 이전으로 돌아간 것을 확인할 수 있습니다.
+
+다시 업데이트 후의 버전으로 돌아가려면 위의 방법을 다시 쓸 수도 있지만 아래의 키워드를 입력해주면 최신 커밋으로 이동합니다.
+
+```bash
+git checkout -
+```
+
+![alt text](/public/img/github_7.png)
+
+다시 [README.txt]파일을 열어보면 업데이트 이후 버전으로 돌아간 것을 확인할 수 있습니다.
+
+
+
+[git-scm.com/downloads]: https://git-scm.com/downloads

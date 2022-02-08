@@ -1,0 +1,52 @@
+---
+layout: post
+title: "[GitHub] 3. GitHub 원격저장소에 커밋 올리기"
+date: 2020-02-08 19:20:23 +0900
+category: github
+---
+# 1. 원격 저장소 만들기
+
+깃허브에 로그인 한 후, 오른쪽 위의 +버튼을 누르면 아래와 같은 페이지로 이동합니다.
+
+![alt text](/public/img/github_8.png)
+
+저장소의 이름과 설명(Description)을 작성하고 만들어줍니다.
+
+위의 원격저장소의 주소는 [github.com/geukggom/Test0][github.com/geukggom/Test0]입니다.
+
+협업을 할 때는 이 주소를 공유하면 됩니다.
+
+# 2. 원격저장소에 커밋 올리기
+
+이전 포스팅에서 만들었던 로컬저장소인 [JisunSource]폴더를 원격저장소에 올려보겠습니다.
+
+[JisunSource]폴더의 Git Bash로 들어옵니다.
+
+```bash
+git remote add origin [원격저장소 주소]
+```
+:로컬 저장소에 원격저장소 주소를 알려주는 코드. origin이라는 이름으로 원격저장소를 추가하라는 뜻입니다.
+
+다른 원하는 이름으로 바꿔도 괜찮습니다.
+
+![alt text](/public/img/github_9.png)
+
+위와 같이 입력해줍니다.
+
+```bash
+git push origin master
+```
+:로컬 저장소의 커밋들을 원격저장소에 올려줍니다.
+
+위의 키워드를 입력해주면 아래와 같은 창이 뜹니다.
+
+![alt text](/public/img/github_10.png)
+
+위의 창에서 로그인을 하면 완료 텍스트가 나옵니다.
+
+이제 만들어뒀던 원격저장소를 확인해보겠습니다.
+
+![alt text](/public/img/github_11.png)
+
+
+[github.com/geukggom/Test0]: https://github.com/geukggom/Test0
