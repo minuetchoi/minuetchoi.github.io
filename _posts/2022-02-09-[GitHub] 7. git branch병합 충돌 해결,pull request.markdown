@@ -1,0 +1,25 @@
+---
+layout: post
+title: "[GitHub] 7. git branch 병합 충돌 해결, pull request"
+date: 2020-02-09 15:20:23 +0900
+category: github
+---
+
+지난 포스팅에서 브랜치 병합을 배웠던데에 이어서, 병합했을 때 버전끼리 충돌했을 경우에 대해 알아보겠습니다.
+
+![alt text](/public/img/github_37.png)
+
+위와 같은 branch 2개를 생성하고,
+
+<br>
+
+![alt text](/public/img/github_38.png)
+
+Abranch에는 위와 같이,
+
+<br>
+
+![alt text](/public/img/github_39.png)
+
+Bbranch에는 위와 같이 파일을 수정해줬습니다.(수정한 부분이 겹치는 상태)
+
