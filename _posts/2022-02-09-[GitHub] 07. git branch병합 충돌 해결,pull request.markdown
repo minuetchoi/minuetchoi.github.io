@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub] 7. git branch 병합 충돌 해결, pull request"
+title: "[GitHub] 07. git branch 병합 충돌 해결, pull request"
 date: 2020-02-09 15:20:23 +0900
 category: github
 ---
@@ -34,6 +34,7 @@ Bbranch에는 위와 같이 파일을 수정해줬습니다.(수정한 부분이
 두 브랜치가 같은 라인의 코드를 수정했기 때문에 충돌이 일어난 것입니다.
 
 비주얼 스튜디오 코드를 확인해보면,
+
 ![alt text](/public/img/github_41.png)
 
 위와 같이 충돌이 일어났음을 알려줍니다.

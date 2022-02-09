@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub] 9. 소스트리 활용법 - rebase"
+title: "[GitHub] 09. 소스트리 활용법 - rebase"
 date: 2020-02-09 15:20:23 +0900
 category: github
 ---
@@ -54,4 +54,5 @@ rebase는 이렇게 하나의 브랜치로 합쳐집니다.
 1. master 로 체크아웃
 
 1. rebaseBranch와 master병합(fast-forward)
+
    ![alt text](/public/img/github_61.png)

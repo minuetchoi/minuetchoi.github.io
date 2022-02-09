@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub] 6. git branch (branch만들기, 이동하기, 병합하기)"
+title: "[GitHub] 06. git branch (branch만들기, 이동하기, 병합하기)"
 date: 2020-02-09 15:20:23 +0900
 category: github
 ---
