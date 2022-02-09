@@ -1,0 +1,15 @@
+---
+layout: post
+title: "[GitHub] 8. GitHub 마크다운 작성시 이미지 업로드 방법"
+date: 2020-02-09 15:20:23 +0900
+category: github
+---
+
+# 1. Repository의 Issues탭에서 New issue 클릭
+
+![alt text](/public/img/github_55.png)
+
+# 2. 올리고자 하는 이미지를 드래그&드랍 후, 주소를 복사해서 md파일에 붙여넣기 하면 끝!
+
+![alt text](/public/img/github_56.png)
+
