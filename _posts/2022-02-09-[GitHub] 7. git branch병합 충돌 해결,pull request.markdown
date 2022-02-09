@@ -23,6 +23,103 @@ Abranch에는 위와 같이,
 
 Bbranch에는 위와 같이 파일을 수정해줬습니다.(수정한 부분이 겹치는 상태)
 
+# 1. Git Branch 병합 출돌 해결
 
-브랜치 내용 masterr
-브랜치 내용 minuetchoii
+이제 지난 포스팅과 같은 방식으로 병합을 해줍니다.
+
+![alt text](/public/img/github_40.png)
+
+두번째 브랜치를 병합할 때 위와 같이 '병합 충돌'이 있다는 창이 뜹니다.
+
+두 브랜치가 같은 라인의 코드를 수정했기 때문에 충돌이 일어난 것입니다.
+
+비주얼 스튜디오 코드를 확인해보면,
+![alt text](/public/img/github_41.png)
+
+위와 같이 충돌이 일어났음을 알려줍니다.
+
+<br>
+
+![alt text](/public/img/github_42.png)
+
+이때 상단에 [Accept Current Change], [Accept Incoming Change], [Accept Both Changes], [Compare Changes] 4가지 키워드가 등장합니다.
+
+- <mark style="background-color: #ffdce0">Accept Current Change</mark>: 위의 코드(브랜치 내용A)만 남음
+- <mark style="background-color: #ffdce0">Accept Incoming Change</mark>: 아래 코드(브랜치 내용B)만 남음
+- <mark style="background-color: #ffdce0">Accept Both Changes</mark>: 위와 아래 코드가 모두 남음
+- <mark style="background-color: #ffdce0">Compare Changes</mark>: 아래와 같이 다른 코드를 비교해줌
+
+![alt text](/public/img/github_43.png)
+
+저는 A,B 내용 모두 살리기 위해 [Accept Both Changes]를 선택해줬습니다.
+
+내용을 수정해준 후 커밋 버튼을 누르면 다음과 같이 자동 메시지가 생성됩니다.
+
+![alt text](/public/img/github_44.png)
+
+충돌이 일어났고, 어느 파일에서 충돌이 일어났는지 자동으로 생성됩니다.
+
+# 2. Pull Request
+
+- pull request: 협력자에게 브랜치 병합을 요청하는 메시지를 보내는 것.
+
+![alt text](/public/img/github_45.png)
+
+테스트를 위해 새로운 브랜치 [branch2/forPullRequest]를 만든 후, 내용을 수정한 다음 커밋했습니다.
+그 다음 원격저장소로 푸시해줍니다.
+
+![alt text](/public/img/github_46.png)
+
+이제까지 새로운 브랜치를 커밋한 후 원격저장소에 푸시할 때마다 원격저장소에 위와 같은 메시지가 생겼을 것입니다.
+이 메시지는 최근에 푸시한 브랜츠가 있을 때만 보여집니다.
+
+![alt text](/public/img/github_47.png)
+
+여기서 먼저 설정해야 할 것은 base 브랜치와 compare 브랜치입니다.
+
+병합한 결과물이 올라갈 브랜치가 base 브랜치 입니다.
+
+오날 메시지의 버튼을 통해 이 창으로 왔다면, 자동으로 설정됩니다.
+
+![alt text](/public/img/github_48.png)
+
+우측에는 위와 같은 입력 창이 보입니다.
+
+- <mark style="background-color: #ffdce0">Reviewers</mark>: 협력자. 보통 같은 팀원이나 해당 기능과 연관된 동료
+- <mark style="background-color: #ffdce0">Assignees</mark>: 이 풀 리퀘스트를 담당하는 동료. 보통 자기자신
+- <mark style="background-color: #ffdce0">Labels</mark>: [버그], [리뷰 필요], [프런트엔드] 등이 이 풀 리퀘스트에 대한 라벨
+
+<br>
+
+[Create pull request]를 클릭하면 원격저장소의 [Pull requests]탭에 다음과 같이 새로운 request가 생깁니다.
+
+![alt text](/public/img/github_49.png)
+
+병합 과정은 아래와 같습니다.
+
+<br>
+
+![alt text](/public/img/github_50.png)
+
+![alt text](/public/img/github_51.png)
+
+![alt text](/public/img/github_52.png)
+
+<br>
+
+병합이 끝난 request는 closed 탭으로 이동합니다.
+
+![alt text](/public/img/github_53.png)
+
+# 3. 병합된 브랜치 내 컴퓨터에 반영하기
+
+원격저장소에서의 브렌트 병합은 끝났지만, 아직 소스트리(로컬저장소)에는 반영되지 않은 상태입니다.
+
+![alt text](/public/img/github_54.png)
+
+소스트리 상단의 패치 탭에서 [모든 원격 저장소에서 가져오기]를 선택한 후 확인을 눌러줍니다.
+
+<br>
+
+내 컴퓨터의 [master]브랜치로 새로운 커밋을 반영하기 위해 체크아웃해준 후, [Pull]버튼을 눌러줍니다.
+
