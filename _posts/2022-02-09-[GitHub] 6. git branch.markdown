@@ -1,0 +1,70 @@
+---
+layout: post
+title: "[GitHub] 6. git branch (branch만들기, 이동하기, 병합하기)"
+date: 2020-02-09 15:20:23 +0900
+category: github
+---
+# 1. Brance란?
+
+만들어 놓은 버전의 복사본(branch)를 만들어 다른 방향으로 작업을 이어가는 것
+
+하나의 개발 브랜치에는 보통 한 사람만 작업해서 올리는 것이 바람직하다고 합니다.
+
+# 2. Branch만들기
+
+![alt text](/public/img/github_24.png)
+
+소스트리 상단의 브랜치 탭을 선택합니다.
+
+<br>
+
+![alt text](/public/img/github_25.png)
+
+새 브랜치 이름을 정해준 후, 새 브랜치로 작업을 할 예정이라면 아래 체크박스에 체크를 해줍니다.
+
+*체크아웃 : 브랜치 이동
+
+![alt text](/public/img/github_26.png)
+
+좌측에 새로운 브랜치가 생기고, 새 브랜치로 체크아웃했기 때문에 현재 브랜치가 mdTest2로 선택되어 있는 것을 확인할 수 있습니다.
+
+<br>
+
+![alt text](/public/img/github_27.png)
+
+테스트를 위해 파일을 새로 하나 만들어준 후, 스테이지에 올리고 커밋해줍니다. (하는 법은 지난 포스팅 참고).
+
+원격저장소에 push를 해주면 아래와 같이 브랜치가 잘 생성된 것을 확인할 수 있습니다.
+
+<br>
+
+![alt text](/public/img/github_28.png)
+
+# 3. Branch 이동하기 (checkout)
+
+다시 master 브랜치로 돌아가서 새로운 브랜치를 생성해봅니다.
+
+![alt text](/public/img/github_29.png)
+
+돌아가고자 하는 브랜치(master)를 우클릭하면 위와 같은 창이 뜹니다. [체크아웃 master]를 눌러줍니다.
+
+<br>
+
+![alt text](/public/img/github_30.png)
+
+현재 작업중인 브랜치가 master로 바뀐 것을 좌측 탭에서 확인할 수 있습니다.
+
+# 4. Branch 병합하기
+
+위와 같은 방법은 반복해 branch1/Test3 브랜치를 또 생성한 후, 파일을 하나 만든 후 커밋해줬습니다.
+
+![alt text](/public/img/github_31.png)
+
+이제 이 두개의 branch를 master로 병합해보겠습니다.
+
+여러명이 협업할 때 각자의 branch로 작업을 하다가 master로 합치는 작업입니다.
+
+먼저 master브랜치로 체크아웃 해줍니다.
+
+[master]에서 [branch1/mdTest2]는 단순히 파일을 추가한 최신본이기 때문에 두 브랜치를 합치면 바뀌는 상태없이 [branch1/mdTest2]가 될 것입니다.
+
