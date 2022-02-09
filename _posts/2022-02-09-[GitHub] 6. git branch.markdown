@@ -68,4 +68,4 @@ category: github
 
 [master]에서 [branch1/mdTest2]는 단순히 파일을 추가한 최신본이기 때문에 두 브랜치를 합치면 바뀌는 상태없이 [branch1/mdTest2]가 될 것입니다.
 
-dfff
+1
