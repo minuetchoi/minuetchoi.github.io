@@ -23,4 +23,6 @@ Abranch에는 위와 같이,
 
 Bbranch에는 위와 같이 파일을 수정해줬습니다.(수정한 부분이 겹치는 상태)
 
+
 브랜치 내용 masterr
+브랜치 내용 minuetchoii
