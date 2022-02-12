@@ -17,7 +17,8 @@ table tr:nth-child(2n) {
 table tr th {
 	font-weight: bold;
 	border: 1px solid #828282;
-	background-color: #fff8dc;
+	background-color: #000000;
+	color: #ffffff;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
