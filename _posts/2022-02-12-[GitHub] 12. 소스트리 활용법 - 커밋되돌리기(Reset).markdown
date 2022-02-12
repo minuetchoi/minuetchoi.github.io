@@ -11,12 +11,17 @@ category: github
 
 ![alt text](/public/img/github_74.png)
 
-- <mark style="background-color: #ffdce0">Soft 모드</mark>: Stage에 올라가 있으며 Description에 Uncommitted changes라고 남아 있는 상태
+- <mark style="background-color: #fff5b1">Soft 모드</mark>: Stage에 올라가 있으며 Description에 Uncommitted changes라고 남아 있는 상태
 
-- <mark style="background-color: #ffdce0">Mixed 모드</mark>: Stagee에는 올라가지 않은 상태지만 Description에 Uncommitted changes라고 남아있는 상태
+- <mark style="background-color: #fff5b1">Mixed 모드</mark>: Stagee에는 올라가지 않은 상태지만 Description에 Uncommitted changes라고 남아있는 상태
 
-- <mark style="background-color: #ffdce0">Hard 모드</mark>: Stage에도 Description에도 아무것도 남게되지 않은 상태
+- <mark style="background-color: #fff5b1">Hard 모드</mark>: Stage에도 Description에도 아무것도 남게되지 않은 상태
 
+
+
+![alt text](/public/img/github_75.png)![alt text](/public/img/github_76.png)
+
+<mark style="background-color: #fff5b1">Push하지 않은 상태에서 5번을 지우고 싶을 때, Hard Mode Reset를 하였을 경우 그 후의 파일들은 다 제거된 상태입니다.</mark>
 
 <br> 
 
