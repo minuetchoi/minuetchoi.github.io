@@ -1,0 +1,23 @@
+---
+layout: post
+title: "[GitHub] 12. 소스트리 활용법 - 커밋되돌리기(Reset)"
+date: 2020-02-12 14:20:23 +0900
+category: github
+---
+
+# 1. Reset (커밋 후, Description을 제거하고 되돌리기)
+
+목록에서 되돌아가고 싶은 버전을 선택하기 마우스 우클릭한 뒤, <mark style="background-color: #fff5b1">'이 커밋까지 현재 브랜치를 초기화'(Reset current branch to this commit)</mark>을 선택하면 아래의 창이 뜹니다.
+
+![alt text](/public/img/github_74.png)
+
+- <mark style="background-color: #ffdce0">Soft 모드</mark>: Stage에 올라가 있으며 Description에 Uncommitted changes라고 남아 있는 상태
+
+- <mark style="background-color: #ffdce0">Mixed 모드</mark>: Stagee에는 올라가지 않은 상태지만 Description에 Uncommitted changes라고 남아있는 상태
+
+- <mark style="background-color: #ffdce0">Hard 모드</mark>: Stage에도 Description에도 아무것도 남게되지 않은 상태
+
+
+<br> 
+
+> <mark style="background-color: #ffdce0">Commit후 Push까지 해버렸다면 Reset은 더 이상 생각하지 않기!</mark>
