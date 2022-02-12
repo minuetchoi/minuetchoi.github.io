@@ -15,3 +15,20 @@ Revert도 Reset과 마찬가지로 동일한 결과를 가져옵니다.
 
 결과는 같지만 남은 이력은 다르기 때문이죠
 
+<br>
+
+![alt text](/public/img/github_77.png)
+
+<br>
+
+위에 Reset에서는 깔끔하게 사라졌다면 Revert는 아래 그림처럼 기록이 남게 됩니다.
+<br>
+
+![alt text](/public/img/github_78.png)
+
+<br>
+'5'에서 고쳤던 부분이 Revert "5"에서 되돌려져 있는걸 확인할 수 있습니다.
+
+단 이렇게 되었다..라고 이력이 남게 되는 것 뿐
+
+> <mark style="background-color: #ffdce0">역순으로, 차례대로 하나씩 Reverse commit을 해야 추후에 Conflict가 발생하지 않습니다.</mark>
