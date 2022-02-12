@@ -13,7 +13,7 @@ category: github
 
 - <mark style="background-color: #fff5b1">Soft 모드</mark>: Stage에 올라가 있으며 Description에 Uncommitted changes라고 남아 있는 상태
 
-- <mark style="background-color: #fff5b1">Mixed 모드</mark>: Stagee에는 올라가지 않은 상태지만 Description에 Uncommitted changes라고 남아있는 상태
+- <mark style="background-color: #fff5b1">Mixed 모드</mark>: Stage에는 올라가지 않은 상태지만 Description에 Uncommitted changes라고 남아있는 상태
 
 - <mark style="background-color: #fff5b1">Hard 모드</mark>: Stage에도 Description에도 아무것도 남게되지 않은 상태
 
