@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 링크
-permalink: /링크/
+title: Link
+permalink: /link/
 ---
 
 [[서울날씨]](https://m.search.naver.com/search.naver?sm=mtp_hty.top&where=m&query=%EC%84%9C%EC%9A%B8%EB%82%A0%EC%94%A8)
@@ -17,3 +17,21 @@ permalink: /링크/
 [[FN가이드]](http://comp.fnguide.com/SVO2/ASP/SVD_main.asp?pGB=1&gicode=A005930&cID=&MenuYn=Y&ReportGB=&NewMenuID=11&stkGb=&strResearchYN=)
 
 [[금융투자협회 (대차잔고)]](http://freesis.kofia.or.kr/)
+
+
+<br>
+<br>
+
+
+> 영어사전
+<iframe src="https://en.dict.naver.com/#/main" style="display:block; width:100%; height: 100vh"></iframe>
+
+<br>
+
+> 베트남사전
+<iframe src="https://dict.naver.com/vikodict/#/main" style="display:block; width:100%; height: 100vh"></iframe>
+
+<br>
+
+> 일본어사전
+<iframe src="https://ja.dict.naver.com/#/main" style="display:block; width:100%; height: 100vh"></iframe>
