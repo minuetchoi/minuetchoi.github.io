@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GitHub] 06. git branch (branch만들기, 이동하기, 병합하기)"
-date: 2020-02-09 15:20:23 +0900
+date: 2022-02-09 15:20:23 +0900
 category: github
 ---
 # 1. Branch란?

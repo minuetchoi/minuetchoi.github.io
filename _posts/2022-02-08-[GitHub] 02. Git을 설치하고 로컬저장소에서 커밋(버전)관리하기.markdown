@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GitHub] 02. Git을 설치하고 로컬저장소에서 커밋(버전)관리하기"
-date: 2020-02-08 19:20:23 +0900
+date: 2022-02-08 19:20:23 +0900
 category: github
 ---
 # 1. Git 설치

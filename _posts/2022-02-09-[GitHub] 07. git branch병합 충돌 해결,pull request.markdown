@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GitHub] 07. git branch 병합 충돌 해결, pull request"
-date: 2020-02-09 15:20:23 +0900
+date: 2022-02-09 15:20:23 +0900
 category: github
 ---
 

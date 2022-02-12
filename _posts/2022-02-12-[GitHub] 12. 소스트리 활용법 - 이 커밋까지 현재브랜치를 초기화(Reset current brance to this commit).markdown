@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[GitHub] 12. 소스트리 활용법 - 이 커밋까지 현재브랜치를 초기화(Reset current brance to this commit)"
-date: 2020-02-12 14:20:23 +0900
+date: 2022-02-12 10:11:23 +0900
 category: github
 ---
 
