@@ -1,0 +1,17 @@
+---
+layout: post
+title: "[GitHub] 12. 소스트리 활용법 - 커밋되돌리기(Reverse commit)"
+date: 2020-02-12 14:20:23 +0900
+category: github
+---
+
+# 1. Revert (Push 후, Description에 추가하고 되돌리기)
+
+말은 Revert이라 하지만 소스트리상에선 Reverse commit 입니다.
+
+Revert도 Reset과 마찬가지로 동일한 결과를 가져옵니다.
+
+하지만 왜? 따로 쓰는 걸까요?
+
+결과는 같지만 남은 이력은 다르기 때문이죠
+
