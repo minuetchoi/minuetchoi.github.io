@@ -5,27 +5,8 @@ date: 2020-02-09 15:20:23 +0900
 category: v-pop
 ---
 
-<style>
-.video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
-}
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-</style>
 <div class="video-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/IjvSnw6cwrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/IjvSnw6cwrM?rel=0?version=3&autoplay=1&controls=1&showinfo=1&loop=1&iv_load_policy=3&playlist=IjvSnw6cwrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ```
@@ -33,31 +14,9 @@ Tay em đang run run nhưng anh thì cứ rót đi
 
 Anh mà không nể em là khi mà anh không hết ly
 
-Uống thêm và ly đời minh chẳng mấy khi vui
-
-Nốc thêm vài chai vì anh em chẳng mấy khi gặp lại
-
-Nơi đây đang xoay xoay thế gian đang xoay vòng
-
-Anh đnag ở nói đâu biết anh có thay lòng
-
-Đừng nói chi mà mình uống đi
-
-1234231 hình như anh nói anh say rồi
-
-1234231 hình như anh nói anh yêu em rồi
-
-Đừng nói chi mà mình uống đi
-
-Đừng nói chi mà mình uống đi
-
-Tay em đang run run nhưng anh thì cứ rót đi
-
-Anh mà không nể em là khi mà anh không hết ly
-
 Uống thêm vài ly đời mình chẳng mấy khi vui
 
-Nốc thêm vài chai vì anh em chẳng mấy khi gặp lại
+Nốc thêm vài chai vì anh em chả mấy khi gặp lại
 
 Nơi đây đang xoay xoay thế gian đang xoay vòng
 
@@ -65,7 +24,39 @@ Anh đang ở nơi đâu biết anh có thay lòng
 
 Đừng nói chi mà mình uống đi
 
-1234231 hình như anh nói anh say rồi
+Một hai ba bốn hai ba một
 
-1234231 hình như anh nói anh yêu em rồi
+Hình như anh nói anh say rồi
+
+Một hai ba bốn hai ba một
+
+Hình như anh nói anh yêu em rồi
+
+Đừng đừng nói chi mà mình uống đi
+
+Đừng nói chi mà mình uống đi
+
+Tay em đang run run nhưng anh thì cứ rót đi
+
+Anh mà không nể em là khi mà anh không hết ly
+
+Uống thêm vài ly vì đời chẳng mấy khi vui
+
+Nốc thêm vài chai vì anh em chả mấy khi gặp lại
+
+Nơi đây đang xoay xoay thế gian đang xoay vòng
+
+Anh đang ở nơi đâu biết anh có thay lòng
+
+Đừng nói chi mà mình uống đi
+
+Một hai ba bốn hai ba một
+
+Hình như anh nói anh say rồi
+
+Một hai ba bốn hai ba một
+
+Hình như anh nói anh yêu em rồi
+
+Một hai ba bốn hai ba
 ```
