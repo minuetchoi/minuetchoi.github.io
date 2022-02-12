@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub] 12. 소스트리 활용법 - 커밋되돌리기(Reverse commit)"
+title: "[GitHub] 13. 소스트리 활용법 - 커밋되돌리기(Reverse commit)"
 date: 2020-02-12 14:20:23 +0900
 category: github
 ---
