@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub] 11. 소스트리 활용법 - Discard, reset, Revert"
+title: "[GitHub] 11. 소스트리 활용법 - 폐기(Discard), 제거(Remove)"
 date: 2020-02-12 12:20:23 +0900
 category: github
 ---
@@ -16,3 +16,22 @@ Revision은 사전적 의미로 수정(정정), 검토, 변경 이라는 뜻입�
 Discard는 취소하기/되돌리기라는 뜻으로 앞에서 짤막하게 설명했었는데요
 한국어 버전을 볼 시에는 "폐기" 라는 단어로 나오더군요
 
+![alt text](/public/img/github_72.png)
+
+위 그림과 같이 '커밋하지 않은 변경사항' 파일이 있습니다.
+
+이 파일을 소스트리 상에서 되돌리고 싶을 때 어찌해야 할까요?
+
+![alt text](/public/img/github_73.png)
+
+우클릭을 하였을 시, 나오는 창에서 제거(Remove), 폐기(Discard)가 있는데 둘 다 비슷한 작업인 것 같은데 왜 따로 있을까요?
+
+Discard는 말 그대로 취소하기/되돌리기 입니다.
+
+<br> 
+
+> <mark style="background-color: #ffdce0">제거(Remove)는 꼭 지워져도 상관없다 할 때만 사용할 것!</mark>
+
+<br>
+
+> <mark style="background-color: #ffdce0">폐기(Discard)는 Commit전 단순히 되돌리는 작업</mark>
