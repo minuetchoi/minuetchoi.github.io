@@ -18,6 +18,8 @@ $(document).ready(function(){
                     controls: true
                 });
                 player.playlist(obj);
+                player.playlist.autoadvance(0);
+                player.playlist.repeat(true);
             },
             error: function (xhr, status, error) {
                 console.log("ERROR!!!"); 
