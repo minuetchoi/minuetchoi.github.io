@@ -9,7 +9,7 @@ $(document).ready(function(){
             url: $video.data('json'),
             cache: false,
             datatype: "JSON",
-            success: function (obj) {
+            success: function (arr) {
                var player = videojs('player', {
                     autoplay: true,
                     loop: true,
@@ -17,7 +17,7 @@ $(document).ready(function(){
                     preload: true,
                     controls: true
                 });
-                player.playlist(obj);
+                player.playlist(shuffle(arr));
                 player.playlist.autoadvance(0);
                 player.playlist.repeat(true);
             },
@@ -27,3 +27,21 @@ $(document).ready(function(){
         });
     }
 });
+
+function shuffle(array) {
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}
