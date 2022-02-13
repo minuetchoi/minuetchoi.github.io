@@ -6,7 +6,7 @@ category: v-pop
 ---
 
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/p8A3ULXgV3E?rel=0?version=3&autoplay=1&controls=1&showinfo=1&loop=1&iv_load_policy=3&playlist=p8A3ULXgV3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video id="player" class="video-js vjs-default-skin vjs-big-play-centered" data-json="/public/json/nắm_lấy_tay_anh.json"></video>
 </div>
 
 ```

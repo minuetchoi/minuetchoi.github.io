@@ -45,9 +45,9 @@ table tr th :last-child, table tr td :last-child {
 }
 
 .video-container iframe,
+.video-container video,
 .video-container object,
 .video-container embed {
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
