@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 02. 오라클 분석함수 - count(*) over() 와 minus"
+title: "[Oracle] 02. SQL - count(*) over() 와 minus"
 date: 2022-02-14 13:40:00 +0900
 category: oracle
 ---

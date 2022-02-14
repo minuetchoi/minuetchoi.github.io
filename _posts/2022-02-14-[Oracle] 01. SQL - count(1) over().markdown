@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 01. 오라클 분석함수 - count(*) over()"
+title: "[Oracle] 01. SQL - count(*) over()"
 date: 2022-02-14 13:30:00 +0900
 category: oracle
 ---

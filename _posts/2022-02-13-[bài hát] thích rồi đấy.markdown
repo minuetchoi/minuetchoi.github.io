@@ -22,7 +22,7 @@ I need to tell you something...
 
 Baby em trót thích anh rồi đấy này chàng trai đáng yêu
 Khi mà anh cứ ngày đêm ngóng trông em
-Baby e trót thích anh rồi đấy dù chỉ một chút thôi
+Baby em trót thích anh rồi đấy dù chỉ một chút thôi
 Khi mà anh luôn chờ mong mãi cơ hội
 Xin anh đừng quá vội
 
