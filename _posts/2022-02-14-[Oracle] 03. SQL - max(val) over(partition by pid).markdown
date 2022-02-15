@@ -1,0 +1,47 @@
+---
+layout: post
+title: "[Oracle] 03. SQL - max(val) over(partition by pid)"
+date: 2022-02-15 09:30:00 +0900
+category: oracle
+---
+
+# 1. max(val) over(partition by pid)
+
+
+### 사용처
+이력 테이블에서 파티션마다 최대 행의 값을 구하고 싶을 때 사용한다.
+
+```sql
+create table sampleT03(id, val) as 
+select 111, 10 from dual
+union all
+select 111, 20 from dual
+union all
+select 111, 30 from dual
+union all
+select 222, 50 from dual
+union all
+select 222, 60 from dual
+union all
+select 333, 10 from dual
+union all
+select 333, 40 from dual;
+```
+
+id마다 val의 최대값을 구해보자
+
+```sql
+select id, val, max(val) over(partition by id) as maxVal
+from   sampleT03;
+
+ id  val  maxval
+---  ---  ------
+111   10      30
+111   20      30
+111   30      30
+222   50      60
+222   60      60
+333   10      40
+333   40      40
+333   40      40
+```

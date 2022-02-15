@@ -1,0 +1,47 @@
+---
+layout: post
+title: "[Oracle] 04. SQL - count(distinct val) over(partition by pid)"
+date: 2022-02-15 09:40:00 +0900
+category: oracle
+---
+
+# 1. max(val) over(partition by pid)
+
+
+### 사용처
+파티션 마다 열의 중복을 조사하고 싶을 때 사용한다.
+
+```sql
+create table sampleeT04(id, val) as
+select 111, 1 from dual
+union all
+select 111, 1 from dual
+union all
+select 111, 2 from dual
+union all
+select 222, 4 from dual
+union all
+select 222, 5 from dual
+union all
+select 222, 6 from dual
+union all
+select 333, 7 from dual
+union all
+select 333, 7 from dual;
+```
+
+```sql
+select id, val, count(distinct val) over(partition by id) as disCnt
+from   sampleT04;
+
+ id  val  disCnt
+---  ---  ------
+111    1       2
+111    1       2
+111    2       2
+222    4       3
+222    5       3
+222    6       3
+333    7       1
+333    7       1
+```
