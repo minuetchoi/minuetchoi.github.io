@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 06. SQL - sum(val) over(order by sortkey)"
+title: "[Oracle] 07. SQL - sum(val) over(order by sortkey)"
 date: 2022-02-15 12:40:00 +0900
 category: oracle
 ---

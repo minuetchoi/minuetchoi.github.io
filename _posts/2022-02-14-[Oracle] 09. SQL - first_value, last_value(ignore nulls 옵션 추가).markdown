@@ -1,0 +1,131 @@
+---
+layout: post
+title: "[Oracle] 09. SQL - first_value, last_value(ignore nulls 옵션 추가)"
+date: 2022-02-15 14:26:00 +0900
+category: oracle
+---
+
+# 1. first_value, last_value(ignore nulls 옵션 붙임)
+
+
+### 사용처
+어떤 조건을 만족하는 최초값과 최종값을 구하고 싶을 때 사용
+
+
+Oracle10gR1부터, first_value함수와 last_value함수에 ignore nulls를 지정할 수 있다.
+
+또한 Oracle11gR2부터는, lag함수와 lead함수에 ignore nulls를 지정할 수 있다.
+
+<br>
+
+예를들어, last_value(값 ignore nulls) over절을 기본적으로 사용하지만, last_value(case when 조건 then 값 end ignore nulls) over 절처럼 case식을 구성하여 사용하는 방법도 있다.
+
+## 1-1. case1
+
+```sql
+create table sampleT09(id, sortkey, val) as
+select 555, 1,  600 from dual
+union all
+select 555, 3,  300 from dual
+union all
+select 555, 5, null from dual
+union all
+select 555, 9, null from dual
+union all
+select 666, 2,  400 from dual
+union all
+select 666, 3, null from dual
+union all
+select 666, 4, null from dual
+union all
+select 666, 5,  600 from dual
+union all
+select 777, 1, null from dual
+union all
+select 777, 3, null from dual
+union all
+select 777, 5,  900 from dual
+union all
+select 777, 6, null from dual
+```
+
+<br>
+
+id 마다, sortkey를 오름차순으로 최초값이 null이 아닌 val과 최종값이 null이 아닌 값을 구해보자
+
+```sql
+select id,
+       sortkey,
+       first_value(val ignore nulls) over(partition by id order by sortkey
+           rows between unbounded preceding and unbounded following) as firstVal,
+       val,
+       last_value(val ignore nulls) over(partition by id order by sortkey
+           rows between unbounded preceding and unbounded following) as lastVal
+from   sampleT09;
+```
+
+```sql
+ id  sortkey  firstVal   Val  LastVal
+---  -------  --------  ----  -------
+555        1       600   600      300
+555        3       600   300      300
+555        5       600  null      300
+555        9       600  null      300
+666        2       400   400      600
+666        3       400  null      600
+666        4       400  null      600
+666        5       400   600      600
+777        1       900  null      900
+777        3       900  null      900
+777        5       900   900      900
+777        6       900  null      900
+```
+
+## 1-2. case2
+
+ignore nulls 의 다은 사용방법으로 
+임의의 행 아래 최초값이 null이 아닌 val과 임의의 행 최종값이 null이 아닌 val을 구해보자
+
+```sql
+create table sampleT09_2(sortkey, val) as
+select  1, null from dual
+union all
+select  2,  500 from dual
+union all
+select  3, null from dual
+union all
+select  5, null from dual
+union all
+select  6,  300 from dual
+union all
+select 10, null from dual
+union all
+select 11, null from dual
+union all
+select 12,  700 from dual
+union all
+select 13, null from dual;
+```
+
+```sql
+select sortkey,
+       first_value(val ignore nulls) over(order by sortkey
+           rows between unbounded preceding and unbounded following) as firstVal,
+       val,
+       last_value(val ignore nulls) over(order by sortkey) as lastVal
+from   sampleT09_2;
+```
+
+```sql
+sortkey  firstVal   val  LastVal
+-------  --------  ----  -------
+      1       500  null     null
+      2       500   500      500
+      3       300  null      500
+      5       300  null      500
+      6       300   300      300
+     10       700  null      300
+     11       700  null      300
+     12       700   700      700
+     13      null  null      700
+```
