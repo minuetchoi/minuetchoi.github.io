@@ -83,7 +83,7 @@ from   sampleT09;
 
 ## 1-2. case2
 
-ignore nulls 의 다은 사용방법으로 
+ignore nulls 의 다른 사용방법으로 
 임의의 행 아래 최초값이 null이 아닌 val과 임의의 행 최종값이 null이 아닌 val을 구해보자
 
 ```sql
