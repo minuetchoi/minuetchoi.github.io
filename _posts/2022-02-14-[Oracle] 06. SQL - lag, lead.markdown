@@ -1,0 +1,60 @@
+---
+layout: post
+title: "[Oracle] 06. SQL - lag, lead"
+date: 2022-02-15 11:40:00 +0900
+category: oracle
+---
+
+# 1. lag, lead
+
+
+### 사용처
+이전 행과 다음행의 차이를 계산하고 싶을 때 사용한다.
+
+<br>
+
+<mark style="background-color: #ffdce0">lag 함수는</mark>, 이전 행의 값을 조회하고 싶을 때 사용한다.
+
+<br>
+
+<mark style="background-color: #ffdce0">lead 함수는</mark>, 다음 행의 값을 조회하고 싶을 때 사용한다.
+
+
+```sql
+create tablee sampleT06(id, sortkey, val) as
+select 111, 1, 99 from dual
+union all
+select 111, 2, 88 from dual
+union all
+select 111, 3, 77 from dual
+union all
+select 111, 5, 66 from dual
+union all
+select 222, 7, 55 from dual
+union all
+select 222, 8, 44 from dual
+union all
+select 222, 9, 33  from dual;
+```
+
+```sql
+select id,
+       sortkey,
+       lag(val) over(partition by id order by sortkey) as prev,
+       val,
+       lead(val) over(partition by id order by sortkey) as next
+from   sampleT06
+order  by id, sortkey;
+```
+
+```sql
+ id sortkey prev val next
+--- ------- ---- --- ----
+111       1 null  99   88
+111       2   99  88   77
+111       3   88  77   66
+111       5   77  66 null
+222       7 null  55   44
+222       8   55  44   33
+222       9   44  33 null
+```

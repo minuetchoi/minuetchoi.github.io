@@ -5,7 +5,7 @@ date: 2022-02-15 09:40:00 +0900
 category: oracle
 ---
 
-# 1. max(val) over(partition by pid)
+# 1. count(distinct val) over(partition by pid)
 
 
 ### 사용처
