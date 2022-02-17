@@ -26,6 +26,20 @@ $(document).ready(function(){
             }
         });
     }
+
+/*
+        $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            type: 'iframe',
+            iframe: {
+                markup: '<style>.mfp-iframe-holder .mfp-content {max-width: 100%;height:100%}</style>'+
+                        '<div class="mfp-iframe-scaler" >'+
+                        '<div class="mfp-close"></div>'+
+                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                        '</div></div>'
+            }
+          });
+*/
+
 });
 
 function shuffle(array) {
