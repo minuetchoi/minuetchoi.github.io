@@ -1,6 +1,12 @@
 window.onload=function(){ setTimeout(function(){ window.scrollTo(0, 1); }, 0); }
 $(document).ready(function () {
 
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (!isMobile) {
+        $('.video-container').css('position', 'relative');
+    }
+
     // 영상 strt
     var $video = $('video');
 
@@ -45,6 +51,30 @@ $(document).ready(function () {
         }
     });
     // --북마크 end
+
+    // marquee start
+    if ($('.marquee').length > 0) {
+        var location = window.location.pathname.split('/')[1];
+        $.ajax({
+            type: "GET",
+            url: '/category/#' + location,
+            cache: false,
+            datatype: "html",
+            success: function (data) {
+                var strHtml = [];
+                var tag;
+                $(data).find('.post-content').find('a[href*="/' + location + '"]').each(function (index, element) {
+                    tag = $(element).closest('li').html().replace(/<span.*>.*<\/span>/gi, '').replace(/\[.*\]/gi, '');
+                    strHtml.push(tag.replace('post-link', 'marquee-link'));
+                });
+                $('.marquee').html('<marquee behavior="scroll" direction="left">' + shuffle(strHtml).join('') + '</marquee>');
+            },
+            error: function (xhr, status, error) {
+                console.log("ERROR!!!");
+            }
+        });
+    }
+    // --marquee end
 });
 
 // 영상 셔플
