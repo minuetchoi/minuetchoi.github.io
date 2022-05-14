@@ -1,0 +1,35 @@
+---
+layout: post
+title: "[Oracle] DB프로시저 내용조회"
+date: 2022-05-14 12:00:00 +0900
+category: oracle
+---
+
+> USER_OBJECTS 테이블
+- DB에 존재하는 모든 오브젝트의 목록 정보가 있음 (TABLE, VIEW, PROCEEDURE, FUNCTION, ..) <br>
+
+> USER_PROCEDURES 테이블
+- DB에 존재하는 프로시저 목록 정보가 있음
+
+> USER_SOURCE 테이블
+- 프로시저의 내용과 TYPE정보가 있음
+
+# 오라클 프로서저 내용 조회
+
+구축된 시스템의 프로시저와 함수를 살펴보면 수백개~수천개씩 되는 경우가 허다하다.
+
+오라클에서 제공하는 시스템 테이블이 있는데 이 테이블을 확용하면 내가 원하는 내용을 쉽게 찾을 수 있다.
+
+
+```sql
+SELECT T1.OBJECT_ID
+     , T1.OBJECT_NAME
+     , T1.OBJECT_TYPE
+     , T2.TEXT
+  FROM USER_OBJECTS T1
+ INNER JOIN USER_SOURCE T2
+    ON T1.OBJECT_NAME = T2.NAME
+ WHERE T1.OBJECT_TYPE IN ('PROCEDURE', 'FUNCTION')
+   AND T2.TEXT LIKE '{찾으려는 프로시저 또는 함수 내 문구 입력}'
+  ;
+```
