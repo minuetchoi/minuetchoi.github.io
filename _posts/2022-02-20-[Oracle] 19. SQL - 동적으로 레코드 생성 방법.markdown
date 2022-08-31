@@ -1,0 +1,26 @@
+---
+layout: post
+title: "[Oracle] 20. SQL - 동적으로 레코드 생성 방법"
+date: 2022-02-21 12:00:00 +0900
+category: oracle
+---
+
+# 월을 동적으로 레코드 생성
+
+```sql
+SELECT  TO_CHAR(ADD_MONTHS(TO_DATE('202201', 'YYYYMM'), LEVEL - 1), 'YYYYMM') AS DATE
+FROM    DUAL
+CONNECT BY ADD_MONTHS(TO_DATE('202201', 'YYYYMM', LEVEL - 1) <= ADD_MONTHS(TO_DATE('202201', 'YYYYMM'), + 11)
+```
+
+<br/><br/>
+
+
+# 구분자를 동적으로 레코드 생성
+
+```sql
+SELECT  TRIM(REGEXP_SUBSTR('#소녀시대#트와이스#블랙핑크#ITZY', '[^#]+', 1, LEVEL)) AG TAG
+FROM    DUAL
+WHERE 1 = 1
+CONNECT BY LEVEL <= REGEXP_COUNT('#소녀시대#트와이스#블랙핑크#ITZY', '[^#]+')
+```
