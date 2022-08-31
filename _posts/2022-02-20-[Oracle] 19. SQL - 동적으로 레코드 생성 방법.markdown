@@ -16,6 +16,16 @@ CONNECT BY ADD_MONTHS(TO_DATE('202201', 'YYYYMM', LEVEL - 1) <= ADD_MONTHS(TO_DA
 <br/><br/>
 
 
+# 일을 동적으로 레코드 생성
+
+```sql
+SELECT  TO_CHAR(TO_DATE('20220101', 'YYYYMMDD') + LEVEL - 1, 'YYYYMMDD')
+FROM    DUAL
+CONNECT BY LEVEL <= (TO_DATE('20221231', 'YYYYMMDD') - TO_DATE('20220101', 'YYYYMMDD') + 1)
+```
+
+<br/><br/>
+
 # 구분자를 동적으로 레코드 생성
 
 ```sql
