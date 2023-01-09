@@ -1,3 +1,10 @@
+---
+layout: post
+title: "[Tool] IntelliJ첫걸음"
+date: 2023-01-09 17:56:00 +0900
+category: tool
+---
+
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
 | 기능 | Eclipse | IntellJ | VSCODE |
