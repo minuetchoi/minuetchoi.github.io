@@ -1,0 +1,65 @@
+# Eclipse, IntelliJ, VSCode 단축키 비교
+
+| 기능 | Eclipse | IntellJ | VSCODE |
+| :---: | :---: | :---: | :---: |
+| 블록 선택 | Alt + Shift + A　| Ctrl + Alt + Up(Dn) | Ctrl + Alt + Up(Dn) |
+| 자동완성 | Ctrl + Space　| Ctrl + Space |  |
+| Reformat, Code tidy | Ctrl + Shift + F | Ctrl + Alt + L | Ctrl + Alt + F |
+| Quick Fix | Ctrl + 1 | Alt + Enter |  |
+| View hierarchy| Ctrl + T | Ctrl + H |  |
+| Find Usages | Ctrl + Shift + G | Alt + F7 |  |
+| Find | Ctrl + F | Ctrl + F | Ctrl + F |
+| Find next | Ctrl + K | F3 |  |
+| Find previous | Ctrl + Shift + K | Shift + F3 |  |
+| Replace | Ctrl + F | Ctrl + R |  |
+| Find in path | Ctrl + H | Ctrl + Shift + F |  |
+| 주석처리 | Ctrl + / | Ctrl + / | Ctrl + / |
+| 주석제거 | Ctrl + / | Ctrl + / | Ctrl + / |
+| 코드 한 줄 복사 | Ctrl + D | Ctrl + D | Alt + Shift + ↓ |
+
+# IntelliJ VM 설정
+
+IntelliJ 실행시 사용할 가상 머신의 인코딩 설정을 지정해 둔다.
+
+본인의 IntelliJ설치 경로는 다음과 같다.
+ex) C:\develop\tools\ideaIC-2022.3.1\bin
+
+bin 하위 디렉토리의 .vmoptions파일을 연다.
+
+```text
+-Xms128m
+-Xmx750m
+-XX:ReservedCodeCacheSize=240m
+-XX:+UseConcMarkSweepGC
+-XX:SoftRefLRUPolicyMSPerMB=50
+-ea
+-XX:CICompilerCount=2
+-Dsun.io.useCanonPrefixCache=false
+-Djava.net.preferIPv4Stack=true
+-Djdk.http.auth.tunneling.disabledSchemes=""
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:-OmitStackTraceInFastThrow
+-Djdk.attach.allowAttachSelf=true
+-Dkotlinx.coroutines.debug=off
+-Djdk.module.illegalAccess.silent=true
+
+-Dfile.encoding=UTF-8
+```
+
+맨 아랫줄에 -Dfile.encoding=UTF-8 를 추가해준 후 저장한다.
+이후 IntellJ를 다시 실행한다.
+
+# 이클립스 Ctrl + Shift + O in IntellJ IDEA
+
+이클립스 상에서 CTRL + SHIFT + O 를 누르면 패키지를 자동으로 가져온다.
+
+IntelliJ상에서 CTRL + ALT + O 를 누르면 사용하지 않는 이부 가져오기만 제거하고 어떤 패키지도 가져오지 않는다.
+
+## 해결책
+
+IDEA는 약간 다르게 작동하며 "unambiguous imports" 를 즉석에서 가져오고 이 기능을 수동으로 활성화 해야 한다.
+
+- File > Settings > Editor > General > Auto import > Checked these options:
+
+1. Add unambigous imports on the fly
+2. Optimize imports on the fly
