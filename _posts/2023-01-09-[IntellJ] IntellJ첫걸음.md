@@ -25,6 +25,11 @@ Theme: 기본적으로 가지고 있는 테마를 확인한다.
 
 ![alt text](/public/img/IntelliJ_03.jpg)
 
+# IntelliJ 공백 표시
+
+Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
+
+왼쪽메뉴에서 [Edit] > [General] > [Appearance] 에서 Show whitespaces 를 체크한다.
 
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
