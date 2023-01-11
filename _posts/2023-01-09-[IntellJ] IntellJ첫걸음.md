@@ -43,6 +43,13 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 개인적으로 Eclipse에서 기본으로 사용하는 ``Consolas`` 가 좋은 것 같다.
 
+# IntelliJ 자동빌드
+
+Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
+
+왼쪽메뉴에서 [Build, Execution, Deployment] > [Compiler] 에서 ``Build project automatically`` 체크
+
+![alt text](/public/img/IntelliJ_05.jpg)
 
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
