@@ -31,6 +31,15 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 왼쪽메뉴에서 [Edit] > [General] > [Appearance] 에서 Show whitespaces 를 체크한다.
 
+# IntelliJ 폰트 변경 및 크기 조절
+
+Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
+
+왼쪽메뉴에서 [Edit] > [Font] 에서 Font, Size 항목을 변경한다.
+
+개인적으로 Eclipse에서 기본으로 사용하는 ``Consolas`` 가 좋은 것 같다.
+
+
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
 | 기능 | Eclipse | IntellJ | VSCODE |
