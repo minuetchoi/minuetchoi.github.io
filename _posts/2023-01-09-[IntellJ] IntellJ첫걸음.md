@@ -31,6 +31,10 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 왼쪽메뉴에서 [Edit] > [General] > [Appearance] 에서 Show whitespaces 를 체크한다.
 
+참고로 whitespaces에 대한 색깔 지정은 다음과 같다.
+
+![alt text](/public/img/IntelliJ_04.jpg)
+
 # IntelliJ 폰트 변경 및 크기 조절
 
 Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
