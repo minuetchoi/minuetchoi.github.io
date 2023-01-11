@@ -62,6 +62,7 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 | 주석처리 | Ctrl + / | Ctrl + / | Ctrl + / |
 | 주석제거 | Ctrl + / | Ctrl + / | Ctrl + / |
 | 코드 한 줄 복사 | Ctrl + D | Ctrl + D | Alt + Shift + ↓ |
+| expand/collapse |  | Ctrl + Shift + [+] or Ctrl + Shift + [-] | Alt + Shift + ↓ |
 
 # IntelliJ VM 설정
 
