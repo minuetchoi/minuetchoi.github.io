@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Tool] IntelliJ첫걸음"
+title: "[IntellJ] IntelliJ첫걸음"
 date: 2023-01-09 17:56:00 +0900
 category: IntellJ
 ---
@@ -13,17 +13,17 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 Theme: 기본적으로 가지고 있는 테마를 확인한다.
 
-![alt text](/public/img/IntelliJ_01.jpg)
+![alt text](/public/img/IntelliJ_01.png)
 
 왼쪽 메뉴창에서 [Plugin] 선택 검색 키워드에 "Theme"를 입력한 후 [Enter]를 입력하여 검색한다.
 
 개인적으로 Xcode Theme 가 좋은 것 같다.
 
-![alt text](/public/img/IntelliJ_02.jpg)
+![alt text](/public/img/IntelliJ_02.png)
 
 재부팅후 다음과 같이 설정한다.
 
-![alt text](/public/img/IntelliJ_03.jpg)
+![alt text](/public/img/IntelliJ_03.png)
 
 # IntelliJ 공백 표시
 
@@ -33,7 +33,7 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 참고로 whitespaces에 대한 색깔 지정은 다음과 같다.
 
-![alt text](/public/img/IntelliJ_04.jpg)
+![alt text](/public/img/IntelliJ_04.png)
 
 # IntelliJ 폰트 변경 및 크기 조절
 
@@ -49,7 +49,7 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 왼쪽메뉴에서 [Build, Execution, Deployment] > [Compiler] 에서 ``Build project automatically`` 체크
 
-![alt text](/public/img/IntelliJ_05.jpg)
+![alt text](/public/img/IntelliJ_05.png)
 
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
