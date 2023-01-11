@@ -2,8 +2,29 @@
 layout: post
 title: "[Tool] IntelliJ첫걸음"
 date: 2023-01-09 17:56:00 +0900
-category: tool
+category: IntellJ
 ---
+
+# IntelliJ 테마 변경하기
+
+Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
+
+왼쪽메뉴에서 [Appearance & Behavior] > [Appearance]
+
+Theme: 기본적으로 가지고 있는 테마를 확인한다.
+
+![alt text](/public/img/IntelliJ_01.jpg)
+
+왼쪽 메뉴창에서 [Plugin] 선택 검색 키워드에 "Theme"를 입력한 후 [Enter]를 입력하여 검색한다.
+
+개인적으로 Xcode Theme 가 좋은 것 같다.
+
+![alt text](/public/img/IntelliJ_02.jpg)
+
+재부팅후 다음과 같이 설정한다.
+
+![alt text](/public/img/IntelliJ_03.jpg)
+
 
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
