@@ -51,6 +51,13 @@ Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
 
 ![alt text](/public/img/IntelliJ_05.png)
 
+
+# IntelliJ 불필요 import 제거
+
+Ctrl + Alt + S 단축키로 Setting 화면에 들어간다.
+
+왼쪽메뉴에서 [Editor] > [General] > [Auto Import] 에서 ``Optimize imports on the fly`` 체크
+
 # Eclipse, IntelliJ, VSCode 단축키 비교
 
 | 기능 | Eclipse | IntellJ | VSCODE |
