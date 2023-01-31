@@ -425,7 +425,7 @@ public interface UserMapper {
 
 여기서 login 메서드를 구현한다.
 
-```
+```java
 package com.example.vuebackboard.api.config.web.service;
 
 import com.example.vuebackboard.api.config.jwt.JwtTokenProvider;
