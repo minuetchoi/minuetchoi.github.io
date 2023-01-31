@@ -320,9 +320,9 @@ public class SecurityConfig {
 
 1. sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS): JWT를 사용하기 때문에 세션을 사용하지 않는다는 설정이다.
 
-1. ``requestMatchers("/members/login").permitAll()``: 해당 API에 대해서는 모든 요청을 허가한다는 설정이다.
+1. ``requestMatchers("/users/login").permitAll()``: 해당 API에 대해서는 모든 요청을 허가한다는 설정이다.
 
-1. ``requestMatchers("/members/test").hasRole("USER")``: USER권한이 있어야 요청할 수 있다는 설정이다.
+1. ``requestMatchers("/users/test").hasRole("USER")``: USER권한이 있어야 요청할 수 있다는 설정이다.
 
 1. ``anyRequest().authenticated()``: 이 밖에 모든 요청에 대해서는 인증을 필요로 한다는 설정이다.
 
