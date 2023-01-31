@@ -8,6 +8,17 @@ category: springboot
 출처: 오늘의 기록 danuri
 
 
+# 환경
+
+```gradle
+implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.1'
+implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+implementation 'org.springframework.boot:spring-boot-starter-security:3.0.1'
+// jwt
+implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+```
 # JWT
 
 JWT (Json Web Token) 은 일반적으로 클라이언트와 서버 통신 시 권한 인가 (Authorization)을 위해 사용하는 토큰이다.
