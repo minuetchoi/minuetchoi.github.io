@@ -7,7 +7,7 @@ category: springboot
 
 # [공식문서]
 
-[https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation](query method reference){:target="_blank"}
+[query method reference](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation){:target="_blank"}
 
 
 # 소스
