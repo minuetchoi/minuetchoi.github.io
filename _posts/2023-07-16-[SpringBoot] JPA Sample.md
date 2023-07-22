@@ -9,6 +9,8 @@ category: springboot
 
 # [소스]
 
+![alt text](/public/img/springboot_16.png)
+
 Board.java
 ```java
 package com.example.springdatajpa.domain;
